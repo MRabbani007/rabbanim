@@ -24,7 +24,7 @@ export const data = [
   },
   {
     id: 3,
-    name: "movies website",
+    name: "Movies App",
     description: "React JS, Tailwind Application",
     image: mmoviesWebImg,
     github: "",
