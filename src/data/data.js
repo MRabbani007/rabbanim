@@ -3,7 +3,7 @@ import RealEst from "../assets/projects/realestate.jpg";
 import todoapp from "../assets/projects/todoapp.png";
 import sleekapp from "../assets/projects/sleek.png";
 import mmoviesWebImg from "../assets/projects/moviesWebsite.png";
-import travelapp from "../assets/projects/travelapp.png";
+import travelapp from "../assets/projects/travelApp.png";
 
 export const data = [
   {
