@@ -2,14 +2,16 @@ import WorkIm from "../assets/projects/workImg.jpeg";
 import RealEst from "../assets/projects/realestate.jpg";
 import todoapp from "../assets/projects/todoapp.png";
 import sleekapp from "../assets/projects/sleek.png";
+import mmoviesWebImg from "../assets/projects/moviesWebsite.png";
 
 export const data = [
   {
     id: 1,
-    name: "React JS, Tailwind Application",
+    name: "Todo App",
+    description: "React JS, Tailwind Application",
     image: todoapp,
     github: "",
-    live: "",
+    live: "https://mrabbani007.github.io/todolist/",
   },
   {
     id: 2,
@@ -20,16 +22,17 @@ export const data = [
   },
   {
     id: 3,
-    name: "React JS Application",
-    image: WorkIm,
+    name: "movies website",
+    description: "React JS, Tailwind Application",
+    image: mmoviesWebImg,
     github: "",
-    live: "",
+    live: "https://mrabbani007.github.io/moviesApp/",
   },
-  {
-    id: 4,
-    name: "React JS Application",
-    image: RealEst,
-    github: "",
-    live: "",
-  },
+  // {
+  //   id: 4,
+  //   name: "React JS Application",
+  //   image: RealEst,
+  //   github: "",
+  //   live: "",
+  // },
 ];
