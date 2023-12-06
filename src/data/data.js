@@ -3,6 +3,7 @@ import RealEst from "../assets/projects/realestate.jpg";
 import todoapp from "../assets/projects/todoapp.png";
 import sleekapp from "../assets/projects/sleek.png";
 import mmoviesWebImg from "../assets/projects/moviesWebsite.png";
+import travelapp from "../assets/projects/travelapp.png";
 
 export const data = [
   {
@@ -29,11 +30,12 @@ export const data = [
     github: "",
     live: "https://mrabbani007.github.io/moviesApp/",
   },
-  // {
-  //   id: 4,
-  //   name: "React JS Application",
-  //   image: RealEst,
-  //   github: "",
-  //   live: "",
-  // },
+  {
+    id: 4,
+    name: "Travel App",
+    description: "React JS, Tailwind Application",
+    image: travelapp,
+    github: "",
+    live: "https://mrabbani007.github.io/travelapp/",
+  },
 ];
