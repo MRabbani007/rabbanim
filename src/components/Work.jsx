@@ -11,7 +11,7 @@ const Work = () => {
       name="work"
       className="w-full md:min-h-screen text-gray-300 bg-[#0a192f]"
     >
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto py-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Work
@@ -19,7 +19,7 @@ const Work = () => {
         </div>
 
         {/* container for projects */}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           {/* grid sm:grid-cols-2 md:grid-cols-3 gap-4 */}
           {/* Gird Item */}
           {project.map((item, index) => (
@@ -27,7 +27,7 @@ const Work = () => {
               key={index}
               // style={{ backgroundImage: `url(${item.image})` }}
               className="relative shadow-lg shadow-[#040c16] group container rounded-md 
-            flex justify-center text-center items-center m-2 content-div w-[400px] h-[300px]"
+            flex justify-center text-center items-center m-2 content-div w-[45%] h-[300px]"
             >
               <img
                 src={item.image}
@@ -35,7 +35,7 @@ const Work = () => {
                 alt=""
               />
               {/* Hover effect for images */}
-              <div className="relative w-full h-full bg-blue-600 flex flex-col justify-center items-center opacity-0 group-hover:opacity-90 z-10">
+              <div className="relative w-full h-full bg-blue-600 flex flex-col justify-center items-center opacity-0 group-hover:opacity-90 z-2">
                 <span className="text-2xl font bold text-white tracking-wider ">
                   {item.name}
                 </span>

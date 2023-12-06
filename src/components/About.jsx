@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 grid-cols-1 gap-8">
           <div>
-            <p className="sm:text-justify text-left text-4xl font-bold px-4">
+            <p className="text-left text-4xl font-normal px-4">
               Mission-driven engineer with a passion for thoughtful UI design
               and a futuristic user experience
             </p>
