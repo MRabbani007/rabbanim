@@ -17,11 +17,16 @@ const ExperienceItem = ({ item }) => {
           <p className="text-center text-xl bg-[#192f50] p-2">{item.project}</p>
         </div>
       </div>
-      <div>
+      <div className="sm:my-0 my-3">
         <p className="text-center text-3xl">{item.position}</p>
         <p className="text-center text-2xl">{item.period}</p>
-        {item.responsibilities.map((resp) => (
-          <p className="border-[1px] p-2 my-2 mx-4 border-gray-100">{resp}</p>
+        {item.responsibilities.map((resp, index) => (
+          <p
+            className="border-[1px] p-2 my-2 mx-4 border-gray-100"
+            key={"expitem-" + index}
+          >
+            {resp}
+          </p>
         ))}
       </div>
     </div>

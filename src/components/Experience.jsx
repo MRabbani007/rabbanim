@@ -17,7 +17,7 @@ const Experience = () => {
           {/* <p className="py-4">These are the technologies that I work with</p> */}
         </div>
         {experience.map((item, index) => (
-          <ExperienceItem item={item} />
+          <ExperienceItem item={item} key={"exp-" + index} />
         ))}
       </div>
     </div>

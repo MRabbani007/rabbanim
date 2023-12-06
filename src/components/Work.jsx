@@ -13,7 +13,7 @@ const Work = () => {
     >
       <div className="max-w-[1000px] mx-auto py-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+          <p className="text-4xl ml-3 font-bold inline border-b-4 text-gray-300 border-pink-600">
             Work
           </p>
         </div>
@@ -27,7 +27,7 @@ const Work = () => {
               key={index}
               // style={{ backgroundImage: `url(${item.image})` }}
               className="relative shadow-lg shadow-[#040c16] group container rounded-md 
-            flex justify-center text-center items-center m-2 content-div w-[45%] h-[300px]"
+            flex justify-center text-center items-center m-2 content-div min-w-[400px] w-[45%] h-[300px]"
             >
               <img
                 src={item.image}
