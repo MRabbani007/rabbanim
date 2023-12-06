@@ -15,10 +15,11 @@ export const data = [
   },
   {
     id: 2,
-    name: "JS, Bootstrap Application",
+    name: "Online Store",
+    description: "JS, Bootstrap Application",
     image: sleekapp,
     github: "",
-    live: "",
+    live: "https://github.com/MRabbani007/mrabbani/tree/main/Store-Frontend",
   },
   {
     id: 3,
