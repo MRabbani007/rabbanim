@@ -19,7 +19,7 @@ export const data = [
     description: "JS, Bootstrap Application",
     image: sleekapp,
     github: "",
-    live: "https://github.com/MRabbani007/mrabbani/tree/main/Store-Frontend",
+    live: "https://mrabbani007.github.io/sleek/",
   },
   {
     id: 3,
