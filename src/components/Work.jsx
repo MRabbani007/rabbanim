@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+// Import Aos
+import Aos from "aos";
+import "aos/dist/aos.css";
+// Imported Components
 import { data } from "../data/data.js";
 
 const Work = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   // projects file
   const project = data;
   //setProject(data);
@@ -13,7 +21,10 @@ const Work = () => {
     >
       <div className="max-w-[1000px] mx-auto py-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl ml-3 font-bold inline border-b-4 text-gray-300 border-pink-600">
+          <p
+            className="text-4xl ml-3 font-bold inline border-b-4 text-gray-300 border-pink-600"
+            data-aos="fade-left"
+          >
             Work
           </p>
         </div>
@@ -28,6 +39,7 @@ const Work = () => {
               // style={{ backgroundImage: `url(${item.image})` }}
               className="relative shadow-lg shadow-[#040c16] group container rounded-md 
             flex justify-center text-center items-center m-2 content-div min-w-[400px] w-[45%] h-[300px]"
+              data-aos="flip-right"
             >
               <img
                 src={item.image}

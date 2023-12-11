@@ -1,4 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+// Import Aos
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+// Imported Media
 import Communication from "../assets/communication.png";
 import LeaderShip from "../assets/leadership.png";
 import Prioritize from "../assets/prioritize.png";
@@ -9,24 +15,35 @@ import ProjectManagement from "../assets/project-manage.png";
 import SoftwareTesting from "../assets/software-testing.png";
 
 const SkillsSoft = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div
       name="skills-soft"
       className="bg-[#0a192f] w-full min-h-screen text-gray-300"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div>
-          <p className="inline-block text-4xl py-4 border-b-4 border-pink-600">
-            Soft Skills
-          </p>
-          {/* <p className="py-4">These are the technologies that I work with</p> */}
-        </div>
+        <p
+          className="inline-block text-4xl py-4 border-b-4 border-pink-600"
+          data-aos="fade-right"
+        >
+          Soft Skills
+        </p>
+
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            data-aos="flip-right"
+          >
             <img className="w-20 mx-auto py-2" src={Scrum} alt="HTML icon" />
             <p className="my-4">Agile Scrum Methodologies</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            data-aos="flip-right"
+          >
             <img
               className="w-20 mx-auto py-2"
               src={ProjectManagement}
@@ -34,7 +51,10 @@ const SkillsSoft = () => {
             />
             <p className="my-4">Technical Program Management</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            data-aos="flip-right"
+          >
             <img
               className="w-20 mx-auto py-2"
               src={SoftwareTesting}
@@ -42,7 +62,10 @@ const SkillsSoft = () => {
             />
             <p className="my-4">Software Testing</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            data-aos="flip-right"
+          >
             <img
               className="w-20 mx-auto py-2"
               src={Communication}
@@ -50,7 +73,10 @@ const SkillsSoft = () => {
             />
             <p className="my-4">Effective Communication</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            data-aos="flip-right"
+          >
             <img
               className="w-20 mx-auto py-2"
               src={LeaderShip}
@@ -58,7 +84,10 @@ const SkillsSoft = () => {
             />
             <p className="my-4">Team Leadership & Supervision</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            data-aos="flip-right"
+          >
             <img
               className="w-20 mx-auto py-2"
               src={TimeManagement}
@@ -66,11 +95,17 @@ const SkillsSoft = () => {
             />
             <p className="my-4">Time Management</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            data-aos="flip-right"
+          >
             <img className="w-20 mx-auto py-2" src={Decision} alt="HTML icon" />
             <p className="my-4">Decision Making</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div
+            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            data-aos="flip-right"
+          >
             <img
               className="w-20 mx-auto py-2"
               src={Prioritize}
