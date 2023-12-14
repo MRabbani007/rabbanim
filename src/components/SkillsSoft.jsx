@@ -22,11 +22,11 @@ const SkillsSoft = () => {
   return (
     <div
       name="skills-soft"
-      className=" w-full min-h-screen bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
+      className="w-full min-h-screen flex flex-col justify-center bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
     >
       <div className="max-w-[1000px] mx-auto p-4 justify-center w-full h-full">
         <p
-          className="text-4xl py-4 px-4 border-b-4 border-yellow-500 w-fit"
+          className="w-fit text-4xl py-4 px-4 border-b-4 border-yellow-500"
           data-aos="fade-right"
         >
           Soft Skills

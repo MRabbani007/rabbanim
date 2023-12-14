@@ -8,7 +8,7 @@ const ExperienceItem = ({ item }) => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 min-h-screen">
+    <div className="grid grid-cols-1 sm:grid-cols-2 my-10">
       <div>
         <div
           className="flex justify-center items-center py-2"

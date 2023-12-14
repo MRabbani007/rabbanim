@@ -17,20 +17,18 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full md:min-h-screen bg-slate-200 text-zinc-900 dark:text-gray-300 dark:bg-zinc-900 duration-500"
+      className="w-full min-h-screen flex flex-col justify-center bg-slate-200 text-zinc-900 dark:text-gray-300 dark:bg-zinc-900 duration-500"
     >
       <div className="max-w-[1000px] mx-auto py-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p
-            className="text-4xl ml-3 inline px-4 border-b-4 border-yellow-500"
-            data-aos="fade-left"
-          >
-            Work
-          </p>
-        </div>
+        <p
+          className="w-fit text-4xl inline py-4 px-4 border-b-4 border-yellow-500"
+          data-aos="fade-left"
+        >
+          Work
+        </p>
 
         {/* container for projects */}
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center py-8">
           {/* grid sm:grid-cols-2 md:grid-cols-3 gap-4 */}
           {/* Gird Item */}
           {project.map((item, index) => (
@@ -38,7 +36,7 @@ const Work = () => {
               key={index}
               // style={{ backgroundImage: `url(${item.image})` }}
               className="relative shadow-lg shadow-[#040c16] group container rounded-md 
-            flex justify-center text-center items-center m-2 content-div min-w-[400px] w-[45%] h-[300px]"
+            flex justify-center text-center items-center m-2 min-w-[350px] w-[45%] h-[300px]"
               data-aos="flip-right"
             >
               <img

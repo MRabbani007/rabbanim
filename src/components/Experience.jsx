@@ -13,10 +13,10 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className=" w-full min-h-screen bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
+      className="w-full min-h-screen bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
     >
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto p-4 h-full">
         <p
           className="w-fit text-4xl py-4 px-4 my-4 border-b-4 border-yellow-500"
           data-aos="fade-left"

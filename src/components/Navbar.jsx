@@ -13,12 +13,9 @@ import { Link } from "react-scroll";
 import Logo from "../assets/logo1.png";
 
 const Navbar = () => {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
 
   const toggleDarkMode = () => {
     if (dark) {
@@ -30,10 +27,15 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+    document.body.classList.add("dark");
+  }, []);
+
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 dark:bg-zinc-950  dark:text-gray-300 bg-slate-300 text-zinc-900 z-50 duration-500">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 z-50 h-[80px] dark:bg-zinc-950 dark:text-gray-300 bg-slate-300 text-zinc-900 duration-500">
       {/* bg-[#091220] */}
-      <div className="text-yellow-500 text-3xl w-fit" data-aos="fade-down">
+      <div className="text-yellow-500 text-3xl" data-aos="fade-down">
         MR
         {/* <img
           src={Logo}
@@ -44,49 +46,50 @@ const Navbar = () => {
       </div>
       <div className="flex justify-center items-center">
         {/* Menu */}
-        <ul className="hidden md:flex text-xl" data-aos="fade-down">
-          <li>
+        <ul className="hidden lg:flex text-xl" data-aos="fade-down">
+          <li className="hover:text-yellow-500 duration-300">
             <Link to="home" smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-500 duration-300">
             <Link to="about" smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-500 duration-300">
             <Link to="skills" smooth={true} duration={500}>
               Skills
             </Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-500 duration-300">
             <Link to="work" smooth={true} duration={500}>
               Work
             </Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-500 duration-300">
             <Link to="experience" smooth={true} duration={500}>
               Experience
             </Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-500 duration-300">
             <Link to="contact" smooth={true} duration={500}>
               Contact
             </Link>
           </li>
         </ul>
-        {/* Hamburger */}
+        {/* Hamburger Menu */}
         <div
           onClick={handleClick}
-          className="md:hidden z-10"
+          className="lg:hidden text-3xl z-10"
           data-aos="fade-down"
         >
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
+        {/* Dark Mode */}
         <div className="mx-4">
           <FaMoon
-            className="inline text-2xl cursor-pointer"
+            className="inline-block text-2xl cursor-pointer"
             onClick={() => toggleDarkMode()}
             data-aos="fade-down"
           />
@@ -144,7 +147,7 @@ const Navbar = () => {
       </ul>
       {/* Social Icons */}
       <div
-        className="hidden lg:flex fixed flex-col top-[35%] left-0"
+        className="hidden lg:flex fixed lg:flex-col top-[35%] left-0"
         data-aos="fade-right"
       >
         <ul>

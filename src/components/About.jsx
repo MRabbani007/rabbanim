@@ -11,26 +11,24 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full min-h-screen flex flex-col justify-center items-center py-4 dark:bg-zinc-900 bg-slate-200 text-zinc-900 dark:text-gray-300 duration-500"
+      className="w-full min-h-screen flex flex-col justify-center py-4 dark:bg-zinc-900 bg-slate-200 text-zinc-900 dark:text-gray-300 duration-500"
     >
-      <div className="w-full">
-        <div className="max-w-[1000px] w-full mx-auto">
+      <div className="max-w-[1000px] mx-auto">
+        <p
+          className="inline-block text-left text-4xl pb-2 px-4 mb-2 border-b-4 border-yellow-500"
+          data-aos="fade-left"
+        >
+          About
+        </p>
+        <div className="max-w-[1000px] font-light w-full mx-auto px-2 grid sm:grid-cols-2 grid-cols-1 md:gap-8 gap-1">
           <p
-            className="text-left text-4xl pb-2 pl-4 mb-2 text-bold px-4 border-b-4 border-yellow-500"
-            data-aos="fade-left"
-          >
-            About
-          </p>
-        </div>
-        <div className="max-w-[1000px] w-full mx-auto grid sm:grid-cols-2 grid-cols-1 gap-8">
-          <p
-            className="text-left text-4xl font-normal px-4"
+            className="text-left md:text-4xl text-3xl font-normal px-2"
             data-aos="fade-right"
           >
             Mission-driven engineer with a passion for thoughtful UI design and
             a futuristic user experience
           </p>
-          <div className="text-justify px-4 text-2xl">
+          <div className="text-justify px-2 text-xl">
             <p className="py-2" data-aos="fade-left">
               Motivated individual with a passion for software development
               aspiring to build innovative and cutting-edge business solutions

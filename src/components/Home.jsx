@@ -13,12 +13,11 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="flex items-center dark:bg-zinc-900 bg-slate-200 min-h-screen w-full duration-500"
+      className="w-full min-h-screen flex flex-col justify-center dark:bg-zinc-900 bg-slate-200 duration-500"
     >
       {/* bg-[#0a192f] */}
       {/* Container */}
-      <div className="flex flex-col justify-center h-full max-w-[1000px] mx-auto p-8">
-        {/* <p className="text-pink-600">Hi, my name is</p> */}
+      <div className="flex flex-col justify-center h-full max-w-[1000px] w-full h-full mx-auto p-8">
         <h1
           className="text-4xl sm:text-6xl font-bold text-slate-500 dark:text-slate-100 duration-500"
           data-aos="fade-up"
@@ -33,7 +32,7 @@ const Home = () => {
           {/* I'm a Full Stack Developer */}
         </h2>
         <p
-          className="py-4 max-w-[700px] font-light text-slate-700 dark:text-slate-400 text-2xl duration-500"
+          className="py-4 max-w-[700px] text-2xl font-light text-slate-700 dark:text-slate-400 duration-500"
           data-aos="flip-up"
         >
           I'm an aspiring Full Stack Developer specializing in building
@@ -42,7 +41,7 @@ const Home = () => {
         </p>
         <div>
           <button
-            className="dark:text-slate-100 text-slate-700 text-xl group border-2 border-slate-700 px-6 py-3 my-2 flex items-center hover:bg-yellow-500 hover:border-yellow-500 duration-500"
+            className=" text-xl group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-500 hover:border-yellow-500 border-slate-700 dark:text-slate-100 text-slate-700 duration-500"
             data-aos="fade-up"
           >
             <Link to="work" smooth={true} duration={500}>

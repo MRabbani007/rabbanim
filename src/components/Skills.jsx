@@ -24,10 +24,10 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className=" w-full min-h-screen bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
+      className="w-full min-h-screen flex flex-col justify-center bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
     >
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto p-4 w-full h-full">
         <div>
           <p
             className="inline-block text-4xl py-4 px-4 border-b-4 border-yellow-500"
