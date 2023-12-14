@@ -24,13 +24,13 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="bg-[#0a192f] w-full min-h-screen text-gray-300"
+      className="bg-zinc-900 w-full min-h-screen text-gray-300"
     >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p
-            className="inline-block text-4xl py-4 border-b-4 border-pink-600"
+            className="inline-block text-4xl py-4 px-4 border-b-4 border-yellow-500"
             data-aos="fade-right"
           >
             Skills

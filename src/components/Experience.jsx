@@ -13,19 +13,17 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-[#0a192f] w-full min-h-screen text-gray-300"
+      className="bg-zinc-900 w-full min-h-screen text-gray-300"
     >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div>
-          <p
-            className="inline-block text-4xl py-4 my-4 border-b-4 border-pink-600"
-            data-aos="fade-left"
-          >
-            Experience
-          </p>
-          {/* <p className="py-4">These are the technologies that I work with</p> */}
-        </div>
+        <p
+          className="w-fit text-4xl py-4 px-4 my-4 border-b-4 border-yellow-500"
+          data-aos="fade-left"
+        >
+          Experience
+        </p>
+        {/* <p className="py-4">These are the technologies that I work with</p> */}
         {experience.map((item, index) => (
           <ExperienceItem item={item} key={"exp-" + index} />
         ))}

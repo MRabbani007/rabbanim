@@ -11,13 +11,13 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full min-h-screen bg-[#0a192f] text-gray-300 py-4"
+      className="w-full min-h-screen bg-zinc-900 text-gray-300 py-4"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="text-left pb-8 pl-4">
             <p
-              className="text-4xl text-bold inline border-b-4 border-pink-600"
+              className="text-4xl text-bold inline px-4 border-b-4 border-yellow-500"
               data-aos="fade-left"
             >
               About

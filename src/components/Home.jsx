@@ -13,8 +13,9 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="flex items-center bg-[#0a192f] min-h-screen w-full"
+      className="flex items-center bg-zinc-900 min-h-screen w-full"
     >
+      {/* bg-[#0a192f] */}
       {/* Container */}
       <div className="flex flex-col justify-center h-full max-w-[1000px] mx-auto p-8">
         {/* <p className="text-pink-600">Hi, my name is</p> */}
@@ -41,7 +42,7 @@ const Home = () => {
         </p>
         <div>
           <button
-            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600"
+            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-500 hover:border-yellow-500"
             data-aos="fade-up"
           >
             <Link to="work" smooth={true} duration={500}>

@@ -19,8 +19,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#091220] text-gray-300 z-50">
-      <div className="text-pink-600 text-3xl" data-aos="fade-down">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-zinc-950  text-gray-300 z-50">
+      {/* bg-[#091220] */}
+      <div className="text-yellow-500 text-3xl" data-aos="fade-down">
         MR
         {/* <img
           src={Logo}
@@ -75,9 +76,10 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-zinc-950 flex flex-col justify-center items-center"
         }
       >
+        {/* bg-[#0a192f] */}
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
