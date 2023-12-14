@@ -17,12 +17,12 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full md:min-h-screen text-gray-300 bg-zinc-900"
+      className="w-full md:min-h-screen bg-slate-200 text-zinc-900 dark:text-gray-300 dark:bg-zinc-900 duration-500"
     >
       <div className="max-w-[1000px] mx-auto py-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p
-            className="text-4xl ml-3 font-bold inline px-4 border-b-4 text-gray-300 border-yellow-500"
+            className="text-4xl ml-3 inline px-4 border-b-4 border-yellow-500"
             data-aos="fade-left"
           >
             Work

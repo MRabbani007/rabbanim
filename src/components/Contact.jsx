@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full min-h-screen bg-zinc-900 flex justify-center items-center p-4"
+      className="w-full min-h-screen dark:bg-zinc-900 bg-slate-200 dark:text-gray-300 text-zinc-900 duration-500 flex justify-center items-center p-4"
     >
       <form
         method="POST"
@@ -18,10 +18,10 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8" data-aos="fade-up">
-          <p className="text-4xl font-bold inline px-4 border-b-4 border-yellow-500 text-gray-300">
+          <p className="text-4xl inline px-4 border-b-4 border-yellow-500 ">
             Contact
           </p>
-          <p className="text-gray-300 py-4">
+          <p className=" py-4">
             Submit the form below or shoot me an email - mrabbani@outlook.com
           </p>
         </div>
@@ -47,7 +47,7 @@ const Contact = () => {
           data-aos="fade-left"
         ></textarea>
         <button
-          className="text-white border-2 hover:bg-yellow-500 hover:border-yellow-500 px-4 py-3 my-8 mx-auto flex items-center"
+          className="border-2 hover:bg-yellow-500 hover:border-yellow-500 px-4 py-3 my-8 mx-auto flex items-center"
           data-aos="fade-left"
         >
           Let's Collaborate

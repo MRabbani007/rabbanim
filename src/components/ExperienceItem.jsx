@@ -23,7 +23,9 @@ const ExperienceItem = ({ item }) => {
         </div>
         <div data-aos="flip-right">
           <img src={item.image} alt="" />
-          <p className="text-center text-xl bg-[#192f50] p-2">{item.project}</p>
+          <p className="text-center text-xl p-2 bg-slate-400 dark:text-zinc-900 duration-500">
+            {item.project}
+          </p>
         </div>
       </div>
       <div className="sm:my-0 my-3" data-aos="fade-left">
@@ -31,7 +33,7 @@ const ExperienceItem = ({ item }) => {
         <p className="text-center text-2xl">{item.period}</p>
         {item.responsibilities.map((resp, index) => (
           <p
-            className="border-[1px] p-2 my-2 mx-4 border-gray-100"
+            className="border-[1px] p-2 my-2 mx-4 border-zinc-800 dark:border-gray-100 duration-500"
             key={"expitem-" + index}
           >
             {resp}

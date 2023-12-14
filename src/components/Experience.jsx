@@ -13,7 +13,7 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-zinc-900 w-full min-h-screen text-gray-300"
+      className=" w-full min-h-screen bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
     >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">

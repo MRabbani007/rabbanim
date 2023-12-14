@@ -4,6 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 // Imported Icons
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 // Imported Components
@@ -12,16 +13,27 @@ import { Link } from "react-scroll";
 import Logo from "../assets/logo1.png";
 
 const Navbar = () => {
+  const [dark, setDark] = useState(false);
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
+  const toggleDarkMode = () => {
+    if (dark) {
+      document.body.classList.remove("dark");
+      setDark(false);
+    } else {
+      document.body.classList.add("dark");
+      setDark(true);
+    }
+  };
+
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-zinc-950  text-gray-300 z-50">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 dark:bg-zinc-950  dark:text-gray-300 bg-slate-300 text-zinc-900 z-50 duration-500">
       {/* bg-[#091220] */}
-      <div className="text-yellow-500 text-3xl" data-aos="fade-down">
+      <div className="text-yellow-500 text-3xl w-fit" data-aos="fade-down">
         MR
         {/* <img
           src={Logo}
@@ -30,46 +42,55 @@ const Navbar = () => {
           style={{ width: "80px", height: "70px" }}
         /> */}
       </div>
-      {/* Menu */}
-      <ul className="hidden md:flex" data-aos="fade-down">
-        <li>
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li>
-          <Link to="experience" smooth={true} duration={500}>
-            Experience
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-      </ul>
-      {/* Hamburger */}
-      <div
-        onClick={handleClick}
-        className="md:hidden z-10"
-        data-aos="fade-down"
-      >
-        {!nav ? <FaBars /> : <FaTimes />}
+      <div className="flex justify-center items-center">
+        {/* Menu */}
+        <ul className="hidden md:flex text-xl" data-aos="fade-down">
+          <li>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link to="work" smooth={true} duration={500}>
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link to="experience" smooth={true} duration={500}>
+              Experience
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+        {/* Hamburger */}
+        <div
+          onClick={handleClick}
+          className="md:hidden z-10"
+          data-aos="fade-down"
+        >
+          {!nav ? <FaBars /> : <FaTimes />}
+        </div>
+        <div className="mx-4">
+          <FaMoon
+            className="inline text-2xl cursor-pointer"
+            onClick={() => toggleDarkMode()}
+            data-aos="fade-down"
+          />
+        </div>
       </div>
       {/* Mobile Menu */}
       <ul
