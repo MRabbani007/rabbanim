@@ -21,7 +21,7 @@ const Work = () => {
     >
       <div className="max-w-[1000px] mx-auto py-4 flex flex-col justify-center w-full h-full">
         <p
-          className="w-fit text-4xl inline py-4 px-4 border-b-4 border-yellow-500"
+          className="w-fit text-4xl py-4 px-4 mx-4 border-b-4 border-yellow-500"
           data-aos="fade-left"
         >
           Work

@@ -28,15 +28,13 @@ const Skills = () => {
     >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 w-full h-full">
-        <div>
-          <p
-            className="inline-block text-4xl py-4 px-4 border-b-4 border-yellow-500"
-            data-aos="fade-right"
-          >
-            Skills
-          </p>
-          {/* <p className="py-4">These are the technologies that I work with</p> */}
-        </div>
+        <p
+          className="text-4xl py-4 px-4 mx-4 w-fit border-b-4 border-yellow-500"
+          data-aos="fade-right"
+        >
+          Skills
+        </p>
+
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
           <div
             className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"

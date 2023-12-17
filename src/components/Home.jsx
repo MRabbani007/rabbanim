@@ -11,13 +11,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div
+    <section
       name="home"
-      className="w-full min-h-screen flex flex-col justify-center dark:bg-zinc-900 bg-slate-200 duration-500"
+      className="w-full min-h-screen bg-opacity-10 flex flex-col justify-center dark:bg-zinc-900 bg-slate-200 duration-500"
     >
       {/* bg-[#0a192f] */}
       {/* Container */}
-      <div className="flex flex-col justify-center h-full max-w-[1000px] w-full h-full mx-auto p-8">
+      <div className="flex flex-col justify-center max-w-[1000px] w-full h-full mx-auto p-8">
         <h1
           className="text-4xl sm:text-6xl font-bold text-slate-500 dark:text-slate-100 duration-500"
           data-aos="fade-up"
@@ -53,7 +53,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

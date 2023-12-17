@@ -9,18 +9,18 @@ const About = () => {
   }, []);
 
   return (
-    <div
+    <section
       name="about"
-      className="w-full min-h-screen flex flex-col justify-center py-4 dark:bg-zinc-900 bg-slate-200 text-zinc-900 dark:text-gray-300 duration-500"
+      className="w-full min-h-screen grid items-center py-4 dark:bg-zinc-900 bg-slate-200 text-zinc-900 dark:text-gray-300 duration-500"
     >
       <div className="max-w-[1000px] mx-auto">
-        <p
-          className="inline-block text-left text-4xl pb-2 px-4 mb-2 border-b-4 border-yellow-500"
+        <h2
+          className="text-left text-4xl pb-2 px-4 mx-4 w-fit mb-2 border-b-4 border-yellow-500"
           data-aos="fade-left"
         >
           About
-        </p>
-        <div className="max-w-[1000px] font-light w-full mx-auto px-2 grid sm:grid-cols-2 grid-cols-1 md:gap-8 gap-1">
+        </h2>
+        <div className="font-light mx-auto px-2 flex flex-col lg:flex-row">
           <p
             className="text-left md:text-4xl text-3xl font-normal px-2"
             data-aos="fade-right"
@@ -28,7 +28,7 @@ const About = () => {
             Mission-driven engineer with a passion for thoughtful UI design and
             a futuristic user experience
           </p>
-          <div className="text-justify px-2 text-xl">
+          <div className="w-full text-justify px-2 text-xl">
             <p className="py-2" data-aos="fade-left">
               Motivated individual with a passion for software development
               aspiring to build innovative and cutting-edge business solutions
@@ -43,17 +43,18 @@ const About = () => {
               Experienced in working with small and large teams of diverse
               backgrounds across multiple companies.
             </p>
-            {/* <p>
-              I am passionate about building excellent software that improves
-              the lives of those around me. I specialize for creating software
-              for clients ranging from individuals and small buisnesses all the
-              way to large enterprise corporations. What would you do if you had
-              a softare expert at your fingertips?
-            </p> */}
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    // {/* <p>
+    //           I am passionate about building excellent software that improves
+    //           the lives of those around me. I specialize for creating software
+    //           for clients ranging from individuals and small buisnesses all the
+    //           way to large enterprise corporations. What would you do if you had
+    //           a softare expert at your fingertips?
+    //         </p> */}
   );
 };
 

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 // Imported Icons
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaStar } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -44,6 +44,7 @@ const Navbar = () => {
           style={{ width: "80px", height: "70px" }}
         /> */}
       </div>
+      {/* container for aligning to the right */}
       <div className="flex justify-center items-center">
         {/* Menu */}
         <ul className="hidden lg:flex text-xl" data-aos="fade-down">
@@ -100,7 +101,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-zinc-950 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-screen h-screen bg-zinc-950 flex flex-col justify-center items-center"
         }
       >
         {/* bg-[#0a192f] */}
