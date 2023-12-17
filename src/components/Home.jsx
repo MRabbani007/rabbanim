@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <section
       name="home"
-      className="w-full min-h-screen bg-opacity-10 flex flex-col justify-center dark:bg-zinc-900 bg-slate-200 duration-500"
+      className="w-full min-h-screen flex flex-col justify-center dark:bg-zinc-900 bg-slate-200 duration-500"
     >
       {/* bg-[#0a192f] */}
       {/* Container */}
