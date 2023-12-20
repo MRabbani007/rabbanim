@@ -101,7 +101,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-screen h-screen bg-zinc-950 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-screen h-screen dark:bg-zinc-950 dark:text-slate-100 bg-slate-200 text-zinc-950 flex flex-col justify-center items-center"
         }
       >
         {/* bg-[#0a192f] */}

@@ -19,13 +19,13 @@ const Home = () => {
       {/* Container */}
       <div className="flex flex-col justify-center max-w-[1000px] w-full h-full mx-auto p-8">
         <h1
-          className="text-4xl sm:text-6xl font-bold text-slate-500 dark:text-slate-100 duration-500"
+          className="text-4xl sm:text-6xl font-extralight text-slate-500 dark:text-slate-100 duration-500"
           data-aos="fade-up"
         >
           Mohamad Rabbani
         </h1>
         <h2
-          className="text-3xl sm:text-5xl font-normal text-slate-400"
+          className="text-3xl sm:text-5xl font-extralight text-slate-400"
           data-aos="fade-up"
         >
           Electrical & Computer Engineer
