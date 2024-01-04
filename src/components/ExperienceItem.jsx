@@ -8,7 +8,7 @@ const ExperienceItem = ({ item }) => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 my-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
       {/* Left Column: Company & Project IMG */}
       <div className="">
         <div
