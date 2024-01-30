@@ -1,5 +1,3 @@
-import WorkIm from "../assets/projects/workImg.jpeg";
-import RealEst from "../assets/projects/realestate.jpg";
 import todoapp from "../assets/projects/todoapp.png";
 import sleekapp from "../assets/projects/sleek.png";
 import mmoviesWebImg from "../assets/projects/moviesWebsite.png";
@@ -20,7 +18,7 @@ export const data = [
     description: "JS, Bootstrap Application",
     image: sleekapp,
     github: "",
-    live: "https://mrabbani007.github.io/sleek/",
+    live: "https://mrabbani007.github.io/onlineStore/",
   },
   {
     id: 3,
