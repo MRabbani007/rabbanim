@@ -31,17 +31,16 @@ const SkillsSoft = () => {
         >
           Soft Skills
         </p>
-
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 skills-container">
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-right"
           >
             <img className="w-20 mx-auto py-2" src={Scrum} alt="HTML icon" />
             <p className="my-4">Agile Scrum Methodologies</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-right"
           >
             <img
@@ -52,7 +51,7 @@ const SkillsSoft = () => {
             <p className="my-4">Technical Program Management</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-right"
           >
             <img
@@ -63,7 +62,7 @@ const SkillsSoft = () => {
             <p className="my-4">Software Testing</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-right"
           >
             <img
@@ -74,7 +73,7 @@ const SkillsSoft = () => {
             <p className="my-4">Effective Communication</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-right"
           >
             <img
@@ -85,7 +84,7 @@ const SkillsSoft = () => {
             <p className="my-4">Team Leadership & Supervision</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-right"
           >
             <img
@@ -96,14 +95,14 @@ const SkillsSoft = () => {
             <p className="my-4">Time Management</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-right"
           >
             <img className="w-20 mx-auto py-2" src={Decision} alt="HTML icon" />
             <p className="my-4">Decision Making</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-right"
           >
             <img

@@ -34,24 +34,23 @@ const Skills = () => {
         >
           Skills
         </p>
-
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 skills-container">
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500   skill-card"
             data-aos="flip-left"
           >
             <img className="w-20 mx-auto py-2" src={HTML} alt="HTML icon" />
             <p className="my-4">HTML</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500   skill-card"
             data-aos="flip-left"
           >
             <img className="w-20 mx-auto py-2" src={CSS} alt="HTML icon" />
             <p className="my-4">CSS</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500   skill-card"
             data-aos="flip-left"
           >
             <img
@@ -62,35 +61,35 @@ const Skills = () => {
             <p className="my-4">JAVASCRIPT</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500   skill-card"
             data-aos="flip-left"
           >
             <img className="w-20 mx-auto py-2" src={ReactImg} alt="HTML icon" />
             <p className="my-4">REACT</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500   skill-card"
             data-aos="flip-left"
           >
             <img className="w-20 mx-auto py-2" src={GitHub} alt="HTML icon" />
             <p className="my-4">GITHUB</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500   skill-card"
             data-aos="flip-left"
           >
             <img className="w-20 mx-auto py-2" src={Node} alt="HTML icon" />
             <p className="my-4">NODE JS</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500   skill-card"
             data-aos="flip-left"
           >
             <img className="w-20 mx-auto py-2" src={Tailwind} alt="HTML icon" />
             <p className="my-4">TAILWIND</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-left"
           >
             <img
@@ -101,21 +100,21 @@ const Skills = () => {
             <p className="my-4">BOOTSTRAP</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-left"
           >
             <img className="w-20 mx-auto py-2" src={Trello} alt="HTML icon" />
             <p className="my-4">TRELLO</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-left"
           >
             <img className="w-20 mx-auto py-2" src={AutoCad} alt="HTML icon" />
             <p className="my-4">AUTOCAD</p>
           </div>
           <div
-            className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            className="shadow-md shadow-slate-500 skill-card"
             data-aos="flip-left"
           >
             <img

@@ -53,3 +53,23 @@ body::-webkit-scrollbar{
       hsla(242, 74%, 61%, 0.8)   
   )!important;
 }
+
+.skills-container > .skill-card{
+  transition: scale 200ms ease, opacity 100ms linear;
+  cursor: pointer;
+}
+
+.skills-container > .skill-card:hover{
+  transition: scale 200ms ease, opacity 100ms linear;
+  scale: 1.1;
+}
+
+.skills-container > .skill-card:not(:hover){
+  transition: scale 200ms ease, opacity 100ms linear;
+}
+
+.skills-container:has(.skill-card:hover) > .skill-card:not(:hover){
+  transition: scale 200ms ease, opacity 100ms linear;
+  scale: .9;
+  opacity: .5;
+}
