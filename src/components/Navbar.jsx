@@ -28,14 +28,17 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    // Aos.init({ duration: 2000 });
     document.body.classList.add("dark");
   }, []);
 
   return (
     <div className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 z-50 h-[80px] dark:bg-zinc-950 dark:text-gray-300 bg-slate-300 text-zinc-900 duration-500">
       {/* bg-[#091220] */}
-      <div className="text-yellow-500 text-3xl" data-aos="fade-down">
+      <div
+        className="text-yellow-500 text-3xl"
+        // data-aos="fade-down"
+      >
         MR
         {/* <img
           src={Logo}
@@ -47,7 +50,10 @@ const Navbar = () => {
       {/* container for aligning to the right */}
       <div className="flex justify-center items-center">
         {/* Menu */}
-        <ul className="hidden lg:flex text-xl" data-aos="fade-down">
+        <ul
+          className="hidden lg:flex text-xl"
+          // data-aos="fade-down"
+        >
           <li className="hover:text-yellow-500 duration-300">
             <Link to="home" smooth={true} duration={500}>
               Home
@@ -149,7 +155,7 @@ const Navbar = () => {
       {/* Social Icons */}
       <div
         className="hidden lg:flex fixed lg:flex-col top-[35%] left-0"
-        data-aos="fade-right"
+        // data-aos="fade-right"
       >
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center pl-6 ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">

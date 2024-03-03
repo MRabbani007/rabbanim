@@ -5,15 +5,15 @@ import "aos/dist/aos.css";
 
 const ExperienceItem = ({ item }) => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    // Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {/* Left Column: Company & Project IMG */}
       <div className="">
         <div
           className="flex justify-center items-center py-2"
-          data-aos="fade-right"
+          // data-aos="fade-right"
         >
           <img
             src={item.companyLogo}
@@ -22,7 +22,10 @@ const ExperienceItem = ({ item }) => {
           />
           <p className="text-xl">{item.company}</p>
         </div>
-        <div data-aos="flip-right" className="">
+        <div
+          // data-aos="flip-right"
+          className=""
+        >
           <img src={item.image} alt="" className="object-fill w-full" />
           <p className="text-center text-xl p-2 bg-slate-400 dark:text-zinc-900 duration-500">
             {item.project}
@@ -30,7 +33,10 @@ const ExperienceItem = ({ item }) => {
         </div>
       </div>
       {/* Right Column: Position & Responsibilities */}
-      <div className="sm:my-0 my-3" data-aos="fade-left">
+      <div
+        className="sm:my-0 my-3"
+        // data-aos="fade-left"
+      >
         <p className="text-3xl">{item.position}</p>
         <p className="text-2xl">{item.period}</p>
         {item.responsibilities.map((resp, index) => (

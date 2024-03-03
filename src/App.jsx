@@ -6,13 +6,14 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import SkillsSoft from "./components/SkillsSoft";
 import Experience from "./components/Experience";
-import Stars from "./components/Stars";
+
+import "./index.css";
+import "./styles/styles.css";
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <Stars /> */}
       <Home />
       <About />
       <Skills />

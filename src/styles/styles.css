@@ -1,0 +1,27 @@
+:root{
+  --clr-yellow-400: #facc15;
+  --clr-yellow-500: #eab308;
+}
+
+h2 {
+  font-size: 2.25rem; 
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  border-bottom: 4px solid var(--clr-yellow-500);
+}
+
+h3{
+  font-size: 1.75rem;
+}
+
+section {
+  width: 100%;
+}
+
+.section-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+}
