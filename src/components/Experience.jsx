@@ -11,10 +11,7 @@ const Experience = () => {
     // Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section
-      name="experience"
-      className="bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
-    >
+    <section name="experience" className="">
       {/* Container */}
       <div className="section-container">
         <h2

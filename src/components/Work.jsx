@@ -16,17 +16,14 @@ const Work = () => {
   //setProject(data);
   // comment
   return (
-    <section
-      name="work"
-      className="text-zinc-900 bg-slate-200 dark:text-gray-300 dark:bg-zinc-900 duration-500"
-    >
+    <section name="work" className="">
       <div className="section-container">
         <h2
         // data-aos="fade-left"
         >
           Work
         </h2>
-        <div className="w-fit mx-auto">
+        <div className="w-full mx-auto">
           {Array.isArray(projects) &&
             projects.map((project, index) => {
               return <Slider project={project} key={index} />;

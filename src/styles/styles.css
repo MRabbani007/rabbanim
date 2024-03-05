@@ -1,6 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    body {
+        /* @apply font-[Raleway]; */
+        @apply font-[Supreme];
+    }
+    li {
+        @apply px-4;
+        @apply py-2;
+        @apply cursor-pointer
+    }
+}
+
 :root{
   --clr-yellow-400: #facc15;
   --clr-yellow-500: #eab308;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #eab308;
+}
+
+body::-webkit-scrollbar{
+  /* display: none; */
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 200;
 }
 
 h2 {
@@ -17,11 +56,14 @@ h3{
 
 section {
   width: 100%;
-}
-
-.section-container {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;
+}
+
+@media screen and (min-width: 564px) {
+  h1{
+    font-size: 3.75rem;
+  }
 }

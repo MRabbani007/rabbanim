@@ -14,13 +14,15 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <SkillsSoft />
-      <Work />
-      <Experience />
-      <Contact />
+      <div className="bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500">
+        <Home />
+        <About />
+        <Skills />
+        <SkillsSoft />
+        <Work />
+        <Experience />
+        <Contact />
+      </div>
     </>
   );
 }

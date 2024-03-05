@@ -8,10 +8,7 @@ const Contact = () => {
     // Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section
-      name="contact"
-      className="pb-[7rem] dark:bg-zinc-900 bg-slate-200 dark:text-gray-300 text-zinc-900 duration-500"
-    >
+    <section name="contact" className="pb-[7rem]">
       <div className="section-container w-fit">
         <h2>Contact</h2>
         <form

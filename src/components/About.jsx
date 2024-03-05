@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -9,11 +9,8 @@ const About = () => {
   }, []);
 
   return (
-    <section
-      name="about"
-      className="dark:bg-zinc-900 bg-slate-200 text-zinc-900 dark:text-gray-300 duration-500"
-    >
-      <div className="section-container w-fit mx-auto">
+    <section name="about" className="">
+      <div className="w-fit mx-auto">
         <h2
         // data-aos="fade-left"
         >

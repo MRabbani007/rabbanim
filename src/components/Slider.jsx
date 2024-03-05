@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   IoChevronBackCircleOutline,
   IoChevronBackOutline,
@@ -7,24 +7,58 @@ import {
 } from "react-icons/io5";
 import { RxDotFilled } from "react-icons/rx";
 
+const delay = 3000;
+
 const Slider = ({ children, project }) => {
   const [displayIndex, setDisplayIndex] = useState(0);
+
+  const timeOutRef = useRef(null);
+
+  const resetTimeout = () => {
+    if (timeOutRef?.current) {
+      clearTimeout(timeOutRef.current);
+    }
+  };
+
   const gotoNext = () => {
+    setAutoSlide(!autoSlide);
     let newIndex =
       displayIndex === project?.images.length - 1 ? 0 : displayIndex + 1;
     setDisplayIndex(newIndex);
   };
+
   const gotoPrevious = () => {
+    setAutoSlide(!autoSlide);
     let newIndex =
       displayIndex === 0 ? project?.images.length - 1 : displayIndex - 1;
     setDisplayIndex(newIndex);
   };
+
   const gotoSlide = (value) => {
+    setAutoSlide(!autoSlide);
     setDisplayIndex(value);
   };
 
+  const [autoSlide, setAutoSlide] = useState(true);
+
+  useEffect(() => {
+    resetTimeout();
+
+    if (autoSlide) {
+      timeOutRef.current = setTimeout(() => {
+        setDisplayIndex((prevIndex) =>
+          prevIndex === project?.images.length - 1 ? 0 : prevIndex + 1
+        );
+      }, delay);
+    }
+
+    return () => {
+      resetTimeout();
+    };
+  }, [autoSlide, displayIndex]);
+
   return (
-    <div className="relative lg:px-[10%] px-10 w-fit h-[340px]">
+    <div className="relative px-10 w-full h-fit">
       {/* Slider controls */}
       <button type="button" className="absolute left-0 top-[50%] z-10 ">
         <IoChevronBackOutline
@@ -40,7 +74,7 @@ const Slider = ({ children, project }) => {
       </button>
       <h3>{project?.name}</h3>
       {/* Carousel Wrapper */}
-      <div className="h-[250px] w-[500px] overflow-hidden relative group">
+      <div className="h-[340px] overflow-hidden relative group">
         {/* <div
           className={`flex flex-row h-full duration-700 ease-in-out`}
           style={{ transform: `translateX(${-displayIndex * 100}%)` }}
@@ -50,7 +84,7 @@ const Slider = ({ children, project }) => {
           <img
             src={project?.images[displayIndex]}
             alt={project?.imageNames[displayIndex]}
-            className="h-full w-full"
+            className="h-full w-full object-fill"
           />
         </div>
         {/* Hover effect for images */}

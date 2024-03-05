@@ -13,10 +13,7 @@ const SkillsSoft = () => {
   }, []);
 
   return (
-    <section
-      name="skills-soft"
-      className="bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
-    >
+    <section name="skills-soft" className="">
       <div className="max-w-[1000px] mx-auto p-4 justify-center w-full h-full">
         <h2
         // data-aos="fade-right"

@@ -10,12 +10,9 @@ const Skills = () => {
   }, []);
 
   return (
-    <section
-      name="skills"
-      className="w-full min-h-screen flex flex-col justify-center bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500"
-    >
+    <section name="skills" className="flex flex-col justify-center">
       {/* Container */}
-      <div className="section-container">
+      <div className="">
         <h2
         // data-aos="fade-right"
         >

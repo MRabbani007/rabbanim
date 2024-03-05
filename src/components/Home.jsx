@@ -11,15 +11,12 @@ const Home = () => {
   }, []);
 
   return (
-    <section
-      name="home"
-      className="w-full min-h-screen flex flex-col justify-center dark:bg-zinc-900 bg-slate-200 duration-500"
-    >
+    <section name="home" className="flex flex-col justify-center">
       {/* bg-[#0a192f] */}
       {/* Container */}
-      <div className="flex flex-col justify-center max-w-[1000px] w-fit h-full mx-auto p-8">
+      <div className="flex flex-col justify-center w-fit mx-auto">
         <h1
-          className="text-4xl sm:text-6xl font-extralight text-slate-500 dark:text-slate-100 duration-500"
+          className="text-slate-500 dark:text-slate-100 duration-500"
           // data-aos="fade-up"
         >
           Mohamad Rabbani
