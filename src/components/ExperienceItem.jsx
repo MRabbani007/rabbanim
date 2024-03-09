@@ -41,7 +41,7 @@ const ExperienceItem = ({ item }) => {
         <p className="text-2xl">{item.period}</p>
         {item.responsibilities.map((resp, index) => (
           <p
-            className="p-2 my-2 border-[1px] border-zinc-800 dark:border-gray-100 duration-500"
+            className="p-2 my-2 border-0 shadow-sm hover:shadow-md hover:shadow-slate-600 shadow-slate-400 border-zinc-800 dark:border-gray-100 duration-500"
             key={"expitem-" + index}
           >
             {resp}

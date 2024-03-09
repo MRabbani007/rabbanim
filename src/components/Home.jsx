@@ -38,7 +38,7 @@ const Home = () => {
         </p>
         <div>
           <button
-            className=" text-xl group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-500 hover:border-yellow-500 border-slate-700 dark:text-slate-100 text-slate-700 duration-500"
+            className=" text-xl group border-2 px-6 py-3 my-2 flex items-center hover:border-yellow-500 border-slate-700 dark:text-slate-100 text-slate-700 duration-500"
             // data-aos="fade-up"
           >
             <Link to="work" smooth={true} duration={500}>

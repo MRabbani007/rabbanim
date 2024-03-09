@@ -33,73 +33,75 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 z-50 h-[80px] dark:bg-zinc-950 dark:text-gray-300 bg-slate-300 text-zinc-900 duration-500">
-      {/* bg-[#091220] */}
-      <div
-        className="text-yellow-500 text-3xl"
-        // data-aos="fade-down"
-      >
-        MR
-        {/* <img
+    <nav className="flex justify-center items-center px-5 z-50 dark:bg-zinc-950 dark:text-gray-300 bg-slate-300 text-zinc-900 duration-500">
+      <div className="flex justify-between items-center flex-1 max-w-[1000px]">
+        {/* bg-[#091220] */}
+        <div
+          className="text-yellow-500 text-3xl"
+          // data-aos="fade-down"
+        >
+          MR
+          {/* <img
           src={Logo}
           alt="Logo Image"
           className=""
           style={{ width: "80px", height: "70px" }}
         /> */}
-      </div>
-      {/* container for aligning to the right */}
-      <div className="flex justify-center items-center">
-        {/* Menu */}
-        <ul
-          className="hidden lg:flex text-xl"
-          // data-aos="fade-down"
-        >
-          <li className="hover:text-yellow-500 duration-300">
-            <Link to="home" smooth={true} duration={500}>
-              Home
-            </Link>
-          </li>
-          <li className="hover:text-yellow-500 duration-300">
-            <Link to="about" smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-          <li className="hover:text-yellow-500 duration-300">
-            <Link to="skills" smooth={true} duration={500}>
-              Skills
-            </Link>
-          </li>
-          <li className="hover:text-yellow-500 duration-300">
-            <Link to="work" smooth={true} duration={500}>
-              Work
-            </Link>
-          </li>
-          <li className="hover:text-yellow-500 duration-300">
-            <Link to="experience" smooth={true} duration={500}>
-              Experience
-            </Link>
-          </li>
-          <li className="hover:text-yellow-500 duration-300">
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-        {/* Hamburger Menu */}
-        <div
-          onClick={handleClick}
-          className="lg:hidden text-3xl z-10"
-          data-aos="fade-down"
-        >
-          {!nav ? <FaBars /> : <FaTimes />}
         </div>
-        {/* Dark Mode */}
-        <div className="mx-4">
-          <FaMoon
-            className="inline-block text-2xl cursor-pointer"
-            onClick={() => toggleDarkMode()}
-            data-aos="fade-down"
-          />
+        {/* container for aligning to the right */}
+        <div className="flex justify-center items-center">
+          {/* Menu */}
+          <ul
+            className="hidden lg:flex text-xl"
+            // data-aos="fade-down"
+          >
+            <li className="hover:text-yellow-500 duration-300">
+              <Link to="home" smooth={true} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className="hover:text-yellow-500 duration-300">
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
+            </li>
+            <li className="hover:text-yellow-500 duration-300">
+              <Link to="skills" smooth={true} duration={500}>
+                Skills
+              </Link>
+            </li>
+            <li className="hover:text-yellow-500 duration-300">
+              <Link to="work" smooth={true} duration={500}>
+                Work
+              </Link>
+            </li>
+            <li className="hover:text-yellow-500 duration-300">
+              <Link to="experience" smooth={true} duration={500}>
+                Experience
+              </Link>
+            </li>
+            <li className="hover:text-yellow-500 duration-300">
+              <Link to="contact" smooth={true} duration={500}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+          {/* Hamburger Menu */}
+          <div
+            onClick={handleClick}
+            className="lg:hidden text-3xl z-10"
+            // data-aos="fade-down"
+          >
+            {!nav ? <FaBars /> : <FaTimes />}
+          </div>
+          {/* Dark Mode */}
+          <div className="">
+            <FaMoon
+              className="inline-block text-2xl cursor-pointer"
+              onClick={() => toggleDarkMode()}
+              // data-aos="fade-down"
+            />
+          </div>
         </div>
       </div>
       {/* Mobile Menu */}
@@ -192,7 +194,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

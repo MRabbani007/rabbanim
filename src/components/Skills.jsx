@@ -23,7 +23,7 @@ const Skills = () => {
             return (
               <div
                 key={index}
-                className="shadow-md shadow-slate-500 w-32 skill-card p-3"
+                className="shadow-md shadow-slate-500 w-28 skill-card p-2"
                 // data-aos="flip-left"
               >
                 <img

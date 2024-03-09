@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500">
+      <div className="px-2 bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500">
         <Home />
         <About />
         <Skills />

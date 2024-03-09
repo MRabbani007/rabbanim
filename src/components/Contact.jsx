@@ -9,7 +9,7 @@ const Contact = () => {
   }, []);
   return (
     <section name="contact" className="pb-[7rem]">
-      <div className="section-container w-fit">
+      <div className="section-container w-fit mx-auto">
         <h2>Contact</h2>
         <form
           method="POST"
