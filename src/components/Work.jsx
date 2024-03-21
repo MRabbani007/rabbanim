@@ -23,7 +23,7 @@ const Work = () => {
         >
           Work
         </h2>
-        <div className="w-full mx-auto">
+        <div className="w-full max-w-[600px] mx-auto">
           {Array.isArray(projects) &&
             projects.map((project, index) => {
               return <Slider project={project} key={index} />;

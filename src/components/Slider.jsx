@@ -58,15 +58,21 @@ const Slider = ({ children, project }) => {
   }, [autoSlide, displayIndex]);
 
   return (
-    <div className="relative px-10 w-full h-fit">
+    <div className="relative sm:px-10 px-2 w-full h-fit">
       {/* Slider controls */}
-      <button type="button" className="absolute left-0 top-[50%] z-10 ">
+      <button
+        type="button"
+        className="sm:absolute hidden left-0 top-[50%] z-10 "
+      >
         <IoChevronBackOutline
           className="inline text-4xl text-yellow-500"
           onClick={gotoPrevious}
         />
       </button>
-      <button type="button" className="absolute right-0 top-[50%] z-10 ">
+      <button
+        type="button"
+        className="sm:absolute hidden right-0 top-[50%] z-10 "
+      >
         <IoChevronForwardOutline
           className="inline text-4xl text-yellow-500"
           onClick={gotoNext}
@@ -74,7 +80,7 @@ const Slider = ({ children, project }) => {
       </button>
       <h3>{project?.name}</h3>
       {/* Carousel Wrapper */}
-      <div className="h-[340px] overflow-hidden relative group">
+      <div className="sm:h-[340px] h-[250px] overflow-hidden relative group">
         {/* <div
           className={`flex flex-row h-full duration-700 ease-in-out`}
           style={{ transform: `translateX(${-displayIndex * 100}%)` }}

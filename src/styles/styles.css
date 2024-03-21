@@ -5,18 +5,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@layer base {
-    body {
-        /* @apply font-[Raleway]; */
-        /* @apply font-[Supreme]; */
-    }
-    li {
-        /* @apply px-4; */
-        /* @apply py-2; */
-        /* @apply cursor-pointer */
-    }
-}
-
 :root{
   --clr-yellow-400: #facc15;
   --clr-yellow-500: #eab308;
@@ -28,13 +16,30 @@
   margin: 0;
 }
 
-body{
-  background-color: #eab308;
+html {
+  font-size: 1rem;
   font-family: 'Supreme', sans-serif;
+}
+
+body{
+  background-color: var(--clr-yellow-400);
 }
 
 body::-webkit-scrollbar{
   /* display: none; */
+}
+
+menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  padding: 0 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  z-index: 50;
 }
 
 h1 {
@@ -67,14 +72,6 @@ li {
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
-}
-
-nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4rem;
 }
 
 @media screen and (min-width: 564px) {
