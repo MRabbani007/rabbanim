@@ -4,8 +4,10 @@
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
+import Typescript from "../assets/typescript.png";
 import ReactImg from "../assets/react.png";
 import Node from "../assets/node.png";
+import Sass from "../assets/sass.png";
 import Tailwind from "../assets/tailwind.png";
 import Bootstrap from "../assets/bootstrap.png";
 import GitHub from "../assets/github.png";
@@ -27,8 +29,10 @@ export const skills_technical = [
   { name: "HTML", image: HTML },
   { name: "CSS", image: CSS },
   { name: "Javascript", image: JavaScript },
+  { name: "Typescript", image: Typescript },
   { name: "React", image: ReactImg },
   { name: "NodeJS", image: Node },
+  { name: "Sass", image: Sass },
   { name: "Tailwind", image: Tailwind },
   { name: "Bootstrap", image: Bootstrap },
   { name: "Github", image: GitHub },

@@ -11,24 +11,18 @@ const Work = () => {
     // Aos.init({ duration: 2000 });
   }, []);
 
-  // projects file
-  const project = []; // data;
-  //setProject(data);
-  // comment
   return (
-    <section name="work" className="">
-      <div className="section-container">
-        <h2
-        // data-aos="fade-left"
-        >
-          Work
-        </h2>
-        <div className="w-full max-w-[600px] mx-auto">
-          {Array.isArray(projects) &&
-            projects.map((project, index) => {
-              return <Slider project={project} key={index} />;
-            })}
-        </div>
+    <section className="">
+      <h2
+      // data-aos="fade-left"
+      >
+        Work
+      </h2>
+      <div className="flex flex-wrap justify-center w-full gap-3 mx-auto">
+        {Array.isArray(projects) &&
+          projects.map((project, index) => {
+            return <Slider project={project} key={index} />;
+          })}
       </div>
     </section>
   );

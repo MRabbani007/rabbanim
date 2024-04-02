@@ -14,14 +14,28 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="px-2 bg-slate-200 text-zinc-900 dark:bg-zinc-900 dark:text-gray-300 duration-500">
-        <Home />
-        <About />
-        <Skills />
-        <SkillsSoft />
-        <Work />
-        <Experience />
-        <Contact />
+      <div className="flex flex-col gap-3 px-2 bg-slate-200 text-zinc-950 dark:bg-zinc-950 dark:text-gray-300 duration-500 pb-24">
+        <div name="home" className="section-container pt-12">
+          <Home />
+        </div>
+        <div name="about" className="section-container pt-12">
+          <About />
+        </div>
+        <div name="skills" className="section-container pt-12">
+          <Skills />
+        </div>
+        <div className="section-container">
+          <SkillsSoft />
+        </div>
+        <div name="work" className="section-container pt-24">
+          <Work />
+        </div>
+        <div name="experience" className="section-container pt-24">
+          <Experience />
+        </div>
+        <div name="contact" className="section-container pt-24">
+          <Contact />
+        </div>
       </div>
     </>
   );

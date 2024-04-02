@@ -10,7 +10,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section name="skills" className="flex flex-col justify-center">
+    <section className="flex flex-col justify-center">
       {/* Container */}
       <div className="">
         <h2
@@ -18,12 +18,12 @@ const Skills = () => {
         >
           Skills
         </h2>
-        <div className="flex flex-wrap justify-center gap-4 text-center skills-container">
+        <div className="p-1 flex flex-wrap justify-center gap-4 text-center skills-container">
           {skills_technical.map((skill, index) => {
             return (
               <div
                 key={index}
-                className="shadow-md shadow-slate-500 w-28 skill-card p-2"
+                className="rounded-md shadow-md shadow-slate-500 w-28 skill-card p-2"
                 // data-aos="flip-left"
               >
                 <img

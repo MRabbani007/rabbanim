@@ -11,10 +11,8 @@ const Home = () => {
   }, []);
 
   return (
-    <section name="home" className="flex flex-col justify-center">
-      {/* bg-[#0a192f] */}
-      {/* Container */}
-      <div className="flex flex-col justify-center w-fit mx-auto">
+    <section className="">
+      <div className="w-fit mx-auto">
         <h1
           className="text-slate-500 dark:text-slate-100 duration-500"
           // data-aos="fade-up"
@@ -36,19 +34,17 @@ const Home = () => {
           exceptional digital experiences. Currently I'm focused on building
           responsive full-stack web applications
         </p>
-        <div>
-          <button
-            className=" text-xl group border-2 px-6 py-3 my-2 flex items-center hover:border-yellow-500 border-slate-700 dark:text-slate-100 text-slate-700 duration-500"
-            // data-aos="fade-up"
-          >
-            <Link to="work" smooth={true} duration={500}>
-              View Work
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-3 inline" />
-              </span>
-            </Link>
-          </button>
-        </div>
+        <Link
+          to="work"
+          smooth={true}
+          duration={500}
+          className="w-fit text-xl group border-2 px-6 py-3 my-2 flex items-center hover:border-yellow-500 border-slate-700 dark:text-slate-100 text-slate-700 duration-500 rounded-md"
+        >
+          View Work
+          <span className="group-hover:rotate-90 duration-300">
+            <HiArrowNarrowRight className="ml-3 inline" />
+          </span>
+        </Link>
       </div>
     </section>
   );

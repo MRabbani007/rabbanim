@@ -9,14 +9,14 @@ const About = () => {
   }, []);
 
   return (
-    <section name="about" className="">
-      <div className="w-fit mx-auto">
+    <section className="">
+      <div className="w-fit mx-auto ">
         <h2
         // data-aos="fade-left"
         >
           About
         </h2>
-        <div className="font-light mx-auto px-2 flex flex-col lg:flex-row">
+        <div className="font-light mx-auto flex flex-col lg:flex-row">
           <p
             className="flex-1 text-left md:text-4xl text-3xl font-normal px-2"
             // data-aos="fade-right"

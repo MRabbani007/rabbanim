@@ -8,45 +8,45 @@ const Contact = () => {
     // Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section name="contact" className="pb-[7rem]">
-      <div className="section-container w-fit mx-auto">
-        <h2>Contact</h2>
+    <section className="">
+      <h2>Contact</h2>
+      <div className="w-fit mx-auto">
         <form
           method="POST"
           action="https://getform.io/f/483d805c-1fff-47c8-8a66-a6e7375b4d11"
           className="flex flex-col max-w-[600px] w-full"
         >
           <div
-            className="pb-8"
+            className=""
             // data-aos="fade-up"
           >
             <p className=" py-4">
-              Submit the form below or shoot me an email - mrabbani@outlook.com
+              Submit the form below or send me an email - mrabbani@outlook.com
             </p>
           </div>
           <input
-            className="bg-[#ccd6f6] p-2"
+            className="bg-[#ccd6f6] p-2 rounded-md"
             type="text"
             placeholder="Name"
             name="name"
             // data-aos="fade-left"
           />
           <input
-            className="my-4 p-2 bg-[#ccd6f6]"
+            className="my-4 p-2 bg-[#ccd6f6] rounded-md"
             type="email"
             placeholder="Email"
             name="email"
             // data-aos="fade-left"
           />
           <textarea
-            className="bg-[#ccd6f6] p-2"
+            className="bg-[#ccd6f6] p-2 rounded-md"
             name="message"
             rows="10"
             placeholder="Message"
             // data-aos="fade-left"
           ></textarea>
           <button
-            className="border-2 hover:bg-yellow-500 hover:border-yellow-500 px-4 py-3 my-8 mx-auto flex items-center"
+            className="border-2 hover:text-yellow-500 hover:border-yellow-500 px-4 py-3 my-8 mx-auto flex items-center rounded-md duration-500"
             // data-aos="fade-left"
           >
             Let's Collaborate

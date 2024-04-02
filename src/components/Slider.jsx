@@ -58,7 +58,7 @@ const Slider = ({ children, project }) => {
   }, [autoSlide, displayIndex]);
 
   return (
-    <div className="relative sm:px-10 px-2 w-full h-fit">
+    <div className="relative sm:px-10 px-2 w-full max-w-[450px] h-fit rounded-lg">
       {/* Slider controls */}
       <button
         type="button"
@@ -80,13 +80,13 @@ const Slider = ({ children, project }) => {
       </button>
       <h3>{project?.name}</h3>
       {/* Carousel Wrapper */}
-      <div className="sm:h-[340px] h-[250px] overflow-hidden relative group">
+      <div className="sm:h-[300px] h-[250px] overflow-hidden relative group rounded-lg">
         {/* <div
           className={`flex flex-row h-full duration-700 ease-in-out`}
           style={{ transform: `translateX(${-displayIndex * 100}%)` }}
         >
         </div> */}
-        <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full z-1">
+        <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-auto z-1">
           <img
             src={project?.images[displayIndex]}
             alt={project?.imageNames[displayIndex]}

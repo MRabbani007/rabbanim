@@ -14,18 +14,18 @@ const SkillsSoft = () => {
 
   return (
     <section name="skills-soft" className="">
-      <div className="max-w-[1000px] mx-auto p-4 justify-center w-full h-full">
+      <div className=" mx-auto">
         <h2
         // data-aos="fade-right"
         >
           Soft Skills
         </h2>
-        <div className="flex flex-wrap justify-center gap-4 text-center skills-container">
+        <div className="flex flex-wrap justify-center gap-3 text-center skills-container">
           {skills_soft.map((skill, index) => {
             return (
               <div
                 key={index}
-                className="shadow-md shadow-slate-500 w-44 skill-card"
+                className="rounded-md shadow-md shadow-slate-500 w-40 skill-card"
                 // data-aos="flip-right"
               >
                 <img
