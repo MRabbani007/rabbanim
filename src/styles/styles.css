@@ -8,9 +8,9 @@
 :root{
   --clr-yellow-400: #facc15;
   --clr-yellow-500: #eab308;
-  --clr-zinc-800:#27272a;
   --clr-zinc-300:#d4d4d8;
   --clr-zinc-500:#71717a;
+  --clr-zinc-800:#27272a;
 }
 
 *, *::after, *::before{
@@ -114,7 +114,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: black;
   height: fit-content;
   padding: 1rem 1rem 2rem;
   border: 1px solid var(--clr-zinc-800);
@@ -172,12 +171,23 @@ li {
   }
 }
 
-@media screen and (max-width: 564px){
+@media screen and (max-width: 567px){
   .name {
     width: 0px;
   }
   .name-container:hover .name{
     width: 0px;
+  }
+  section {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@media screen and (prefers-color-scheme: light ){
+  section{
+    background-color: var(--clr-zinc-300);
+    color: var(--clr-zinc-800);
   }
 }
 

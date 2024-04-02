@@ -14,7 +14,7 @@ const Home = () => {
     <section className="">
       <div className="w-fit mx-auto">
         <h1
-          className="text-slate-500 dark:text-slate-100 duration-500"
+          className="text-slate-800 dark:text-slate-100 duration-500"
           // data-aos="fade-up"
         >
           Mohamad Rabbani

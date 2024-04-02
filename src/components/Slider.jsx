@@ -39,7 +39,7 @@ const Slider = ({ children, project }) => {
     setDisplayIndex(value);
   };
 
-  const [autoSlide, setAutoSlide] = useState(true);
+  const [autoSlide, setAutoSlide] = useState(false);
 
   useEffect(() => {
     resetTimeout();
