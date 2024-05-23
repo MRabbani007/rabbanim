@@ -25,7 +25,6 @@ html {
 }
 
 body{
-  background-color: var(--clr-yellow-400);
 }
 
 body::-webkit-scrollbar{
@@ -37,7 +36,7 @@ menu {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 1rem .5rem;
+  padding: 1rem;
   border-radius: .375rem;
   max-width: 1032px;
   margin: 0 auto;
@@ -107,7 +106,7 @@ h3{
 section {
   width: 100%;
   max-width: 1032px;
-  box-shadow: 0 #d4d4d8;
+  /* box-shadow: 0 #d4d4d8; */
   border-radius: .5rem;
   margin-left: auto;
   margin-right: auto;
@@ -116,7 +115,7 @@ section {
   justify-content: center;
   height: fit-content;
   padding: 1rem 1rem 2rem;
-  border: 1px solid var(--clr-zinc-800);
+  /* border: 1px solid var(--clr-zinc-800); */
   box-shadow: 0 0 10px 0px var(--clr-zinc-800);
 }
 
@@ -147,11 +146,14 @@ li {
   transition: width .5s;
 }
 
+.nav-link:hover::after {
+  width: 100%;
+}
+
 .name-container{
   cursor: pointer;
   transition: width 2s;
 }
-
 .name {
   width: 0px;
   transition: all 500ms;
@@ -161,9 +163,6 @@ li {
   width: 110px;
 }
 
-.nav-link:hover::after {
-  width: 100%;
-}
 
 @media screen and (min-width: 564px) {
   h1{
@@ -186,8 +185,8 @@ li {
 
 @media screen and (prefers-color-scheme: light ){
   section{
-    background-color: var(--clr-zinc-300);
-    color: var(--clr-zinc-800);
+    /* background-color: var(--clr-zinc-300);
+    color: var(--clr-zinc-800); */
   }
 }
 

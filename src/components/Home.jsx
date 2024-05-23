@@ -11,10 +11,10 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="">
+    <section className="dark:bg-zinc-950">
       <div className="w-fit mx-auto">
         <h1
-          className="text-slate-800 dark:text-slate-100 duration-500"
+          className="text-slate-800 dark:text-slate-100  duration-500"
           // data-aos="fade-up"
         >
           Mohamad Rabbani
@@ -38,7 +38,7 @@ const Home = () => {
           to="work"
           smooth={true}
           duration={500}
-          className="w-fit text-xl group border-2 px-6 py-3 my-2 flex items-center hover:border-yellow-500 border-slate-700 dark:text-slate-100 text-slate-700 duration-500 rounded-md"
+          className="w-fit text-xl group border-2 px-6 py-3 my-2 flex items-center hover:border-yellow-500 border-slate-700 dark:text-slate-100 text-slate-700 duration-500 cursor-pointer rounded-md"
         >
           View Work
           <span className="group-hover:rotate-90 duration-300">

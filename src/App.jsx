@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col gap-3 sm:px-2 px-0 bg-slate-200 text-zinc-950 dark:bg-zinc-950 dark:text-gray-300 duration-500 pb-24">
+      <div className="flex flex-col gap-3 sm:px-2 px-0 bg-slate-200 text-zinc-950 dark:bg-zinc-900 dark:text-gray-300 duration-500 pb-24">
         <div name="home" className="section-container pt-12">
           <Home />
         </div>

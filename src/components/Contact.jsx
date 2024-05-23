@@ -8,7 +8,7 @@ const Contact = () => {
     // Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section className="">
+    <section className="dark:bg-zinc-950">
       <h2>Contact</h2>
       <div className="w-fit mx-auto">
         <form
@@ -46,7 +46,7 @@ const Contact = () => {
             // data-aos="fade-left"
           ></textarea>
           <button
-            className="border-2 hover:text-yellow-500 hover:border-yellow-500 px-4 py-3 my-8 mx-auto flex items-center rounded-md duration-500"
+            className="border-2 border-zinc-400 hover:text-yellow-500 hover:border-yellow-500 px-4 py-3 my-8 mx-auto flex items-center rounded-md duration-500"
             // data-aos="fade-left"
           >
             Let's Collaborate

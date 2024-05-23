@@ -9,7 +9,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="">
+    <section className="dark:bg-zinc-950">
       <div className="w-fit mx-auto ">
         <h2
         // data-aos="fade-left"

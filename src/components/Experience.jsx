@@ -13,7 +13,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section className="">
+    <section className="dark:bg-zinc-950">
       <h2
       // data-aos="fade-left"
       >

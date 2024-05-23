@@ -10,7 +10,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="flex flex-col justify-center">
+    <section className="flex flex-col justify-center dark:bg-zinc-950">
       {/* Container */}
       <div className="">
         <h2
